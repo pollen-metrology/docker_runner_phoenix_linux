@@ -58,7 +58,7 @@ echo "Register runner..." &&
 
 #gitlab-runner start &&
 
-gitlab-runner run &&
+
 
 #gitlab-runner verify
 
@@ -71,6 +71,7 @@ gitlab-runner run &&
 
 #gitlab-runner verify
 
+#gitlab-runner run &&
 tail -f /dev/null
 
 #Extra line added in the script to run all command line arguments
