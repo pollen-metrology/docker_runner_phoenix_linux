@@ -124,7 +124,10 @@ RUN apt-get install -y texlive-base
 # ARTIFACT : https://docs.gitlab.com/ee/user/project/pipelines/job_artifacts.html
 
 # GITLAB-RUNNER
-RUN apt-get install -y vim curl gitlab-runner
+#RUN apt-get install -y vim curl gitlab-runner
+
+# update conan
+RUN pip3 install conan --upgrade
 
 COPY run.sh /
 RUN chmod 755 /run.sh
